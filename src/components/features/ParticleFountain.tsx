@@ -23,7 +23,7 @@ interface ParticleFountainProps {
 export default function ParticleFountain({ isActive, onComplete }: ParticleFountainProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const particlesRef = useRef<Particle[]>([]);
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number>(undefined);
   const particleIdRef = useRef(0);
   
   const colors = [
